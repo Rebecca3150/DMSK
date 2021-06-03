@@ -1,0 +1,2 @@
+circRNA2Vec_model filter=lfs diff=lfs merge=lfs -text
+linRNA2Vec_model filter=lfs diff=lfs merge=lfs -text
