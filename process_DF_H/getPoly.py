@@ -27,12 +27,14 @@ coden_dict3 = {'GCU': 0, 'GCC': 0, 'GCA': 0, 'GCG': 0,  # alanine<A>
 
 def coden3(seq, D):
     vectors = np.zeros((400, 10))
-    for j in range(10):
-        for i in range(len(seq) - 5 - j*3):
-            a = coden_dict3[seq[i:i + 3].replace('T', 'U')]
-            b = coden_dict3[seq[i + 3 + j*3:i + 6 + j*3].replace('T', 'U')]
+        for j in range(10):
+        seq2=seq+seq[0:(j+2)*3-1]
+        for i in range(len(seq2) - 5 - j*3):
+            a = coden_dict3[seq2[i:i + 3].replace('T', 'U')]
+            b = coden_dict3[seq2[i + 3 + j*3:i + 6 + j*3].replace('T', 'U')]
             if a != 20 and b != 20:
                 vectors[D[str(a) + str(b)]][j] += 1
+                
     return vectors.tolist()
 
 
