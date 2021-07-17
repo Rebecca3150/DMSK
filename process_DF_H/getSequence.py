@@ -31,7 +31,7 @@ def coden(seq):
         vectors[i][coden_dict[seq[i:i + 3].replace('T', 'U')]] = 1
     return vectors.tolist()
 
-
+#
 def dealwithSequence(protein):
     dataX = []
     dataY = []
