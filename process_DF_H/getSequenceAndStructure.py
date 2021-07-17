@@ -1,6 +1,6 @@
 import numpy as np
 
-# F,T,I,H,M,S
+
 coden_dict4 = {'AF': 0, 'AT': 1, 'AI': 2, 'AH': 3, 'AM': 4, 'AS': 5, 'CF': 6, 'CT': 7, 'CI': 8, 'CH': 9, 'CM': 10,
                'CS': 11, 'GF': 12, 'GT': 13, 'GI': 14, 'GH': 15, 'GM': 16, 'GS': 17, 'UF': 18, 'UT': 19, 'UI': 20,
                'UH': 21, 'UM': 22, 'US': 23, }
