@@ -11,7 +11,7 @@ python 3.7
 # Content 
 ./Datasets: the dataset with label and sequence. circRNAs and linear RNA datasets.  
 ./circRNA2Vec: the circRNA word vector model.  
-./linRNA2Vec: the linearRNA word vector model.   
+./linRNA2Vec: the linear RNA word vector model.   
 ./process_DF_H: extraction of circRNA sequences with individual view features and common features.  
 ./TSK-FLS-CVH: the TSK-FLS with the Cooperation of Visible and Hidden views (TSK-FLS-CVH).   
 
