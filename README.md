@@ -44,7 +44,7 @@ The specific code implementation is only updated with "./Datasets/circRNA-RBP/" 
 ## How to learn the dimension of common feature in a new application scenarios
 When learning the common features of multiple deep features in a new application scenario, we choose from a given range of subspace dimensions from 10 to 50. The specific steps are as follows.  
  1. In the './process_DF_H/DMSK.py' file, we get the five common features {10,20,30,40,50} in the following code. Specifically, we get the corresponding features by specifying the dimension k in the './process_DF_H/wgcca.py' file.  
- ```Java
+ ```Python
  H = main(feature1,feature2,feature3,feature4, model, weights, scale_by_sv, save_g_with_model)
  ```   
  2. Each of the five features on all datasets is separately input into the TSK-FS classifier, i.e., the './TSK-FLS-CVH/auto_expt_H_TSK.m' file to obtain the final AUC metrics.  
